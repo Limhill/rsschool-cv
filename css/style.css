@@ -11,3 +11,16 @@
 * {
     box-sizing: border-box;
 }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header, .main, .footer {
+    border: 1px solid red;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
