@@ -1,4 +1,13 @@
-.test {
-    font-weight: bold;
-    color: aqua;
+@font-face {
+    font-family: "OpenSans";
+    src: url("../assets/fonts/OpenSans-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../assets/fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+* {
+    box-sizing: border-box;
 }
