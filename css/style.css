@@ -16,33 +16,30 @@ html {
 }
 body {
     min-height: 100vh;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.header, .main, .footer {
-    border: 1px solid red;
-}
-.container {
-    max-width: 1440px;
+    font-family: OpenSans, sans-serif;
     margin: 0 auto;
 }
-header {
+
+/* Header starts here */
+.header {
     background: black;
+    min-height: 5vh;
 }
 .nav-list {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
-    min-height: 50px;
 }
 .nav-item {
     background: none;
     transition: .3s;
-    padding: 20px 20px;
+    padding: 2% 1%;
+    text-align: center;
 }
 .nav-item:hover {
     background: rgba(0, 255, 255, 0.5);
@@ -51,11 +48,98 @@ header {
     text-decoration: none;
     color: white;
 }
+
+/* Main block starts here */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 90vh;
+}
+.left-side, .right-side {
+    border: rebeccapurple 3px solid;
+    flex-direction: column;
+}
+.right-side {
+    flex-grow: 2;
+}
+.left-side {
+    background: black;
+    color: white;
+    max-width: 30%;
+    display: flex;
+}
+.section {
+    padding: 0 30px;
+}
+.section-title {
+    text-transform: uppercase;
+    position: relative;
+
+}
+.section-title::after {
+    content: "";
+    border-bottom: yellow 3px solid;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    height: 1px;
+    width: 100%;
+    left: 0;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.additional-info {
+    font-size: 16px;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.contact-list {
+    list-style: none;
+
+}
+.contact-item {
+    margin: 0 0 5px 0;
+    background: #1f1f1f;
+    position: relative;
+    padding: 5px 10px;
+}
+.contact-item::before {
+    content: "";
+    height: 100%;
+    background: yellow;
+    width: 3em;
+    position: absolute;
+    display: inline-block;
+    left: -3em;
+    top: 0;
+}
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer starts here */
+.footer {
+    min-height: 5vh;
+}
+
+/* Media */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
     }
     .nav-item {
         padding: 10px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .left-side {
+        max-width: 100%;
     }
 }
