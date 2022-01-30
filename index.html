@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alibek Zhulmurzin CV</title>
 <!--    <link rel="stylesheet" href="css/reset.css">-->
@@ -18,7 +18,7 @@
                 <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="#work-experience" class="nav-link">Work experience</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="nav-item"><a href="#code-sample" class="nav-link">Code</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
@@ -27,8 +27,7 @@
 </header>
 
 <main class="main">
-    <div class="container">
-        <div class="left-side">
+    <div class="left-side">
             <img src="assets/img/my_photo.jpg" alt="My photo" class="photo">
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
@@ -59,30 +58,72 @@
                 </ul>
             </section>
         </div>
-
-        <div class="right-side">
-            <section class="section" id="profile">
+    <div class="right-side">
+            <section class="name">
                 <h1>Alibek Zhulmurzin</h1>
+                <p>Junior frontend developer</p>
             </section>
             <section class="section" id="about-me">
-                <h2>About me</h2>
+                <h2 class="section-title">About me</h2>
+                <p class="additional-info">I'm a very positive person who likes to learn new things very much.
+                    I like to perceive difficulties as challenges. Also, I'm very responsible, efficient and sociable.
+                    I have a high level of self-discipline and the ability to self-learn.</p>
             </section>
             <section class="section" id="work-experience">
-                <h2>Work experience</h2>
+                <h2 class="section-title">Work experience</h2>
+                <div class="specific-experience">
+                    <div class="years">2015&#8209;2017</div>
+                    <div class="work-info">
+                        <h3>Technical engineer</h3>
+                        <p>Start-up and repairing of industrial installations of varying complexity,
+                            mainly in the electrical and instrumentation fields</p>
+                    </div>
+                </div>
+                <div class="specific-experience">
+                    <div class="years">2015&#8209;2017</div>
+                    <div class="work-info">
+                        <h3>Senior automation engineer</h3>
+                        <p>Work with Allen-Bradley Programmable Logical Controllers (PLC) in backend and
+                            FactoryTalk View Studio in frontend. Write code for PLC mostly on LAD,
+                            but also can write on STL, SFC or FBD. Create and maintain automation systems
+                            that are responsible for steel production. Have experience of maintaining legacy-code,
+                            refactoring it and adding new features into.</p>
+                        </div>
+                </div>
             </section>
-            <section class="section" id="code">
-                <h2>Code sample</h2>
+            <section class="section" id="code-sample">
+                <h2 class="section-title">Code sample</h2>
+                <pre class="code">
+                    <code>
+                        function finalGrade (exam, projects) {
+                            if (projects > 10 || exam > 90) {
+                                return 100;
+                            } else if (projects >= 5 && exam > 75) {
+                                return 90;
+                            } else if (projects >= 2 && exam > 50) {
+                                return 75;
+                            } else {
+                                return 0;
+                            }
+                        }
+                    </code>
+                </pre>
             </section>
             <section class="section" id="languages">
-                <h2>Languages</h2>
+                <h2 class="section-title">Languages</h2>
+                <ul class="languages">
+                    <li>Russian: Native speaker</li>
+                    <li>English: Intermediate</li>
+                </ul>
             </section>
         </div>
-
-    </div>
 </main>
 
 <footer class="footer">
-
+    <div class="footer-left"><a href="https://rs.school/js/" target="_blank" class="github-img">My GitHub</a></div>
+    <div class="footer-center">2022</div>
+    <div class="footer-right"><a href="https://rs.school/js/" target="_blank" class="rsschool-img"></a></div>
 </footer>
+
 </body>
 </html>
