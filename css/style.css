@@ -103,6 +103,10 @@ body {
 .link {
     text-decoration: none;
     color: #ffffffff;
+    transition: 0.5s;
+}
+.link:hover {
+    background: #4a3bdf;
 }
 .contact-list {
     list-style: none;
